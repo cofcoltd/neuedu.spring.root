@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <bean id="petStore" class="com.service.PetStoreService"></bean>
+
+    <bean id="bar" class="com.ioc.Bar"/>
+    <bean id="baz" class="com.ioc.Baz"/>
+    <bean id="foo" class="com.ioc.Foo">
+        <constructor-arg ref="bar"></constructor-arg>
+        <constructor-arg ref="baz"></constructor-arg>
+    </bean>
+
+    <bean id="emp" class="com.ioc2.Emp">
+        <constructor-arg name="name" value="tom"></constructor-arg>
+        <constructor-arg name="id" value="12"></constructor-arg>
+        <constructor-arg name="skills">
+            <list>
+                <value>java</value>
+                <value>c++</value>
+                <value>css</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+
+</beans>

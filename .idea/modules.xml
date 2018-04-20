@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/neuedu.spring.01/neuedu.spring.01.iml" filepath="$PROJECT_DIR$/neuedu.spring.01/neuedu.spring.01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/neuedu.spring.02/neuedu.spring.02.iml" filepath="$PROJECT_DIR$/neuedu.spring.02/neuedu.spring.02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/neuedu.spring.root.iml" filepath="$PROJECT_DIR$/neuedu.spring.root.iml" />
+    </modules>
+  </component>
+</project>
