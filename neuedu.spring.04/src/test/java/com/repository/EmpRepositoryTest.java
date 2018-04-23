@@ -20,7 +20,5 @@ public class EmpRepositoryTest {
         System.out.println("emp count : " + empRepository.getEmpCount());
 
 
-        Emp emp = new Emp();
-
     }
 }
