@@ -9,12 +9,14 @@
         <module name="neuedu.spring.01" />
         <module name="neuedu.spring.02" />
         <module name="neuedu.spring.03" />
+        <module name="neuedu.spring.04" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="neuedu.spring.01" target="1.5" />
       <module name="neuedu.spring.02" target="1.5" />
       <module name="neuedu.spring.03" target="1.5" />
+      <module name="neuedu.spring.04" target="1.5" />
       <module name="neuedu.spring.root" target="1.5" />
     </bytecodeTargetLevel>
   </component>
