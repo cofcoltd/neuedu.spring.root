@@ -35,7 +35,7 @@ public class EmpRepository {
         return row;
     }
 
-    @Transactional(readOnly = true)
+    @Transactional
     public int[] saveEmp2(final Emp emp) {
 
         final String sql = "insert into emp (ename , salary) values ( ? , ? )";
