@@ -2,6 +2,7 @@ package com.Repository;
 
 import com.config.AppConfig;
 import com.domain.Emp;
+import com.service.EmpService;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -41,13 +42,13 @@ public class EmpRepositoryTest {
     @Test
     public void saveEmp2() {
 
-        EmpRepository repository = applicationContext.getBean(EmpRepository.class);
+        EmpService empService = applicationContext.getBean(EmpService.class);
 
         Emp emp = new Emp();
         emp.setEname("tomcat");
         emp.setSalary(new BigDecimal(7000));
 
-        int[] result =  repository.saveEmp2(emp);
+        int[] result = empService.saveEmp(emp);
 
         System.out.println("rows : " + Arrays.toString(result) );
 

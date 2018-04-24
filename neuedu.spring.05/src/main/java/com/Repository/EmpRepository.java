@@ -31,11 +31,11 @@ public class EmpRepository {
         final String sql = "insert into emp (ename , salary) values ( ? , ? )";
 
         int row =  jdbcTemplate.update(sql , emp.getEname() , emp.getSalary() );
-        int a = 1/0;
+//        int a = 1/0;
         return row;
     }
 
-    @Transactional
+
     public int[] saveEmp2(final Emp emp) {
 
         final String sql = "insert into emp (ename , salary) values ( ? , ? )";

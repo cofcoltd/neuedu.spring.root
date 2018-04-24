@@ -24,8 +24,7 @@ public class HouseTest {
 
         House house = applicationContext.getBean(House.class);
 
-//        house.buy();
+        house.buy("jack");
 
-        house.aaaa();
     }
 }
